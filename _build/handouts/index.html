@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Sentiment Visualization | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">Sentiment Visualization</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">Sentiment Visualization</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#research">Research</a><ul>
+<li><a class="reference internal" href="#chart-types-to-research">Chart Types To Research</a></li>
+<li><a class="reference internal" href="#resources-to-check-out">Resources to Check Out</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#visualization-trials">Visualization Trials</a><ul>
+<li><a class="reference internal" href="#airline-sentiment-data">Airline Sentiment Data</a></li>
+<li><a class="reference internal" href="#self-driving-sentiment-data">Self Driving Sentiment Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="sentiment-visualization">
+<h1>Sentiment Visualization</h1>
+<section class="section" id="introduction">
+<h2>Introduction</h2>
+<p>In this exercise, you’ll continue solidifying your visualization
+skills using Plotly.</p>
+</section>
+<section class="section" id="research">
+<h2>Research</h2>
+<p>Before you begin this exercise, you will want to ensure that you have a clear
+understanding of the different types of data visualization that exist, and
+what types of relationships / conclusions that you can draw from each. As a
+data analyst, you will have to be extremely knowledgable and comfortable
+making decisions about which chart/graph to use for different datasets.
+The ability to make good visualization decisions requires knowing your options
+for graphs/charts, as well as being <strong>inspired</strong> by visualizations you have seen.
+Thankfully, there are so many engaging visualization aggregators and examples
+on the internet.</p>
+<p>During this part of the exercise, you’ll spend time generating a library of
+visualizations that <strong>inspire, impress, excite, or educate</strong> you. In your future
+endeavors as a data analyst, you can draw from this set of examples to
+help drive you towards a visualization that accomplishes your goals.</p>
+<p><strong>Create a Google Doc to house your research findings for this part of the
+exercise.</strong></p>
+<p>Do a search for <strong>each</strong> of the following chart/graph types, and choose 1-2
+examples to save (screenshot or download an image of the visualization) and
+include in the Google Doc you create. Below each image, for <strong>each chart type</strong>
+answer the following questions:</p>
+<ol class="arabic simple">
+<li><p>What is the definition of the chart? If it’s similar to other chart types,
+how do you differentiate this type from others?</p></li>
+<li><p>What is the key takeaway for this visualization? What is the central message it
+is communicating?</p></li>
+<li><p>What are the visual elements that make this visualization effective? Why does
+it stand out to you as a good example of this chart?
+(Color? Shapes? Size? Scale? Labels? Smart filtering choices? Something else?)</p></li>
+</ol>
+<section class="section" id="chart-types-to-research">
+<h3>Chart Types To Research</h3>
+<p>Required:</p>
+<ul class="simple">
+<li><p>Histogram</p></li>
+<li><p>Line</p></li>
+<li><p>Bar (non-histogram)</p></li>
+<li><p>Stacked Bar</p></li>
+<li><p>Gantt</p></li>
+<li><p>Pie</p></li>
+<li><p>Box plot</p></li>
+<li><p>Bubble chart</p></li>
+<li><p>Bubble map</p></li>
+<li><p>Heatmap (non-geographical)</p></li>
+</ul>
+<p>Optional:</p>
+<ul class="simple">
+<li><p>Funnel chart</p></li>
+<li><p>Radial diagram</p></li>
+<li><p>Candlestick chart</p></li>
+<li><p><strong>Any other you wish to add</strong></p></li>
+</ul>
+</section>
+<section class="section" id="resources-to-check-out">
+<h3>Resources to Check Out</h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.informationisbeautifulawards.com" target="_blank">Information Is Beautiful Awards</a></p></li>
+<li><p><a class="reference external" href="https://observablehq.com/&#64;d3/gallery" target="_blank">D3.js Gallery</a></p></li>
+<li><p><a class="reference external" href="https://www.python-graph-gallery.com" target="_blank">Python Plotly Gallery</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/index.html" target="_blank">Matplotlib Gallery</a></p></li>
+</ul>
+<p><strong>When you are finished, please download your Research doc as a PDF, and add it to your Github
+repo for this exercise.</strong></p>
+</section>
+</section>
+<section class="section" id="setup">
+<h2>Setup</h2>
+<p>Make account on <a class="reference external" href="https://data.world" target="_blank">data.world</a>.</p>
+<p>Download two datasets as CSV files.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://data.world/crowdflower/airline-twitter-sentiment" target="_blank">Airline sentiment dataset</a></p></li>
+<li><p><a class="reference external" href="https://data.world/crowdflower/sentiment-self-driving-cars" target="_blank">Self-driving cars sentiment dataset</a></p></li>
+</ul>
+<p>Make a virtualenv and install jupyter notebook, pandas, and plotly.</p>
+<pre class="console literal-block">$ <span class="cmd">virtualenv env</span>
+$ <span class="cmd">source env/bin/activate</span>
+$ (env) <span class="cmd">pip3 install notebook</span>
+$ (env) <span class="cmd">pip3 install plotly</span>
+$ (env) <span class="cmd">pip3 install pandas</span></pre>
+<p>Now, start your Jupyter notebook server.</p>
+<pre class="console literal-block">$ (env) <span class="cmd">jupyter notebook</span></pre>
+<p>This should open your browser to your jupyter notebook tree, but if it does not, open this link:
+<a class="reference external" href="http://localhost:8888/tree" target="_blank">http://localhost:8888/tree</a>.</p>
+<p>Lastly, create a new Jupyter Notebook by clicking the dropdown on the upper right that says “New” and then
+select “Python 3 (pykernal)”.</p>
+</section>
+<section class="section" id="visualization-trials">
+<h2>Visualization Trials</h2>
+<p>Complete the following visualization tasks for each dataset you downloaded.</p>
+<p>It may be helpful to refer to following resources as you work:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://plotly.com/python/" target="_blank">Plotly Python Documentation</a></p></li>
+<li><p><a class="reference external" href="https://app.pluralsight.com/library/courses/plotly-building-data-visualizations" target="_blank">Plotly Visualization Pluralsight Course</a></p></li>
+</ul>
+<section class="section" id="airline-sentiment-data">
+<h3>Airline Sentiment Data</h3>
+<p>Starting with the <cite>airline sentiment</cite> dataset, create the following charts using Plotly.</p>
+<p><strong>Conduct some initial data exploration to become familiar with the dataset.</strong></p>
+<p><strong>Then, begin visualizing the data in Jupyter notebook using Plotly.</strong></p>
+<p>Visualizations to create:</p>
+<ul class="simple">
+<li><p>A histogram showing the number of neutral sentiment datapoints for all airlines in the dataset</p></li>
+<li><p>A histogram showing the count of each sentiment for the “Delta” airline</p></li>
+<li><p>A separate pie chart for each airline, showing the sentiment percentage for each sentiment</p></li>
+<li><p>Your choice: choose one additional visualization to create that shows something of interest to you
+using this dataset</p></li>
+</ul>
+<p><strong>Lastly, answer the following research questions based on the visualizations. Include your answers in
+your Jupyter notebook as Markdown.</strong></p>
+<p>Research Questions:</p>
+<ul class="simple">
+<li><p>Which airlines are doing a good job capturing customer satisfaction?</p></li>
+<li><p>How should American airlines strategically differentiate themselves in the coming year? What opportunities do they have?</p></li>
+<li><p>How should Southwest airlines strategically differentiate themselves in the coming year? What opportunities do they have?</p></li>
+</ul>
+</section>
+<section class="section" id="self-driving-sentiment-data">
+<h3>Self Driving Sentiment Data</h3>
+<p><strong>Conduct some initial data exploration to become familiar with the dataset.</strong></p>
+<p><strong>Then, begin visualizing the data in Jupyter notebook using Plotly.</strong></p>
+<p>Visualizations to create:</p>
+<ul class="simple">
+<li><p>Scatter plot showing sentiment on the x axis, with the y axis indicating the level of confidence
+on the sentiment</p></li>
+<li><p>Scatter plot indicating the length of the response (in characters) on the y axis and the confidence
+level on the x axis</p></li>
+<li><p>Pie chart showing a summary of all sentiments, but only sentiment judgements with a confidence of
+higher than 0.8.</p></li>
+<li><p>Your choice: choose one additional visualization to create that shows something of interest to you
+using this dataset</p></li>
+</ul>
+<p><strong>Lastly, answer the following research questions based on the visualizations. Include your answers in
+your Jupyter notebook as Markdown.</strong></p>
+<p>Research questions:</p>
+<ul class="simple">
+<li><p>What are some of the primary concerns about self-driving cars, based on this dataset?</p></li>
+<li><p>What is the public sentiment like for self-driving cars?</p></li>
+</ul>
+<p><strong>Congrats! You’re done.</strong></p>
+<p>Be sure to push your Jupyter notebook file to Github to turn in this exercise.</p>
+</section>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2021 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
